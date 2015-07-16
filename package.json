@@ -1,0 +1,13 @@
+{
+  "name": "SQLConsoleApp",
+  "version": "0.0.0",
+  "description": "SQLConsoleApp",
+  "main": "app.js",
+  "author": {
+    "name": "Niranjan.Sharma",
+    "email": ""
+  },
+  "dependencies": {
+    "node-sqlserver-unofficial": "~1.4.0"
+  }
+}

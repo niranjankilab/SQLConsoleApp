@@ -1,0 +1,2 @@
+C:\Lab\SQLConsoleApp\SQLConsoleApp\obj\Debug\SQLConsoleApp.njsprojResolveAssemblyReference.cache
+C:\Lab\SQLConsoleApp\SQLConsoleApp\bin\Microsoft.NodejsTools.WebRole.dll
