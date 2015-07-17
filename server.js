@@ -7,5 +7,13 @@ var awQuery = 'SELECT [EmailAddress] as emailid from [AdventureWorks].[SalesLT].
 var port = process.env.PORT || 1337;
 http.createServer(function (req, res) {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('Hello World\n');
+    res.write("node " + process.version + " " + process.arch + ".\n");
+    
+    sql.query(connectionString, awQuery, function (err, result) {
+        if (err)
+            res.end("Query Failed \n" + err);
+        else
+            var r = Math.floor((Math.random() * 100) + 1);
+            res.end("Query result: " + result[r].emailid + " \n");
+    });
 }).listen(port);
